@@ -1,17 +1,117 @@
 body {
-  padding-bottom: 500px;
+  padding-bottom: 200px;
+  font-family: "PT Serif";
+  position: relative;
 }
 .project-section-beginning {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .image1 {
-  max-width: 500px;
+  max-width: 700px;
 }
-
+.nature {
+  max-width: 30%;
+  padding: 20px;
+}
+.header {
+  font-size: 25px;
+  font-weight: bold;
+}
 .tools-images {
-  max-width: 40px;
+  max-width: 60px;
 }
 .tools-section {
   padding-bottom: 100px;
+}
+.title {
+  font-family: "Goldman";
+}
+.major {
+  font-family: "Smooch Sans";
+}
+.location {
+  font-family: "Smooch Sans";
+  font-weight: 500;
+}
+.tools-section {
+  padding-bottom: 50px;
+}
+.card-container {
+  opacity: 0;
+  animation: fadein 1s forwards;
+}
+.sliding1 {
+  animation: slide-in 1000ms;
+}
+.sliding2 {
+  animation: slide-in 1250ms;
+}
+.sliding3 {
+  animation: slide-in 1500ms;
+}
+.image {
+  font-size: 60px;
+  padding: 5px;
+}
+.intro {
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 150px;
+}
+.intro-text {
+  padding-top: 100px;
+  max-width: 30%;
+  margin: 0 auto;
+}
+@media (max-width: 400px) {
+  * {
+    overflow-x: hidden;
+  }
+  .tools-images {
+    max-width: 50px;
+  }
+  .card-container {
+    display: block;
+  }
+  .image1 {
+    max-width: 300px;
+    padding-right: 2px;
+  }
+  .mobile-dropdown {
+    justify-content: center;
+  }
+  .nature {
+    max-width: 70%;
+    padding: 10px;
+  }
+  .project-section-beginning {
+    margin-top: 200px;
+  }
+  .mobile-switch-off {
+    display: none;
+  }
+  .image {
+    font-size: 30px;
+  }
+  .intro-text {
+    max-width: 70%;
+  }
+  .nature-container {
+    display: block;
+  }
+}
+
+@keyframes fadein {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slide-in {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }

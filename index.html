@@ -5,16 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Elizabeth's Portfolio</title>
     <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Dancing+Script:wght@400..700&family=Goldman:wght@400;700&family=Jua&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Smooch+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="d-flex justify-content-end pt-3 me-2">
-      <div class="btn-group dropdown">
+    <div class="mobile-dropdown d-flex justify-content-end pt-3 me-2">
+      <div class="mobile-switch-off btn-group dropdown">
         <button
           type="button"
           class="btn btn-secondary dropdown-toggle w-100 text-end"
@@ -52,51 +66,84 @@
         </ul>
       </div>
     </div>
-    <div class="pt-5 text-center project-section-beginning">
-      <p class="fs-1">Elizabeth Booth</p>
-      <p class="fs-5">Software Engineer</p>
+    <div class="pt-5 mb-3 text-center project-section-beginning">
+      <p class="title fs-1">Elizabeth Booth</p>
+      <p class="location fs-3">Flagstaff, Arizona</p>
+      <p class="major fs-5">Software Engineer</p>
     </div>
-    <div class="project-section-beginning container text-center">
-      <div class="row">
+    <div class="intro">
+      <div class="intro-text">
+        I am a Junior at NAU studying software engineering. Currently, I am
+        working with the Django framework and continuing my projects with Godot
+        Game Engine. I have worked in multiple teams utilizing version control
+        systems including Git, and Kanban boards such as Jira, to plan out
+        development. I find myself enjoying seeing visual and tangible changes
+        with my code that emphasize the intersection between engineering,
+        creativity and art.
+      </div>
+    </div>
+    <div
+      class="sliding1 shadow-lg p-2 project-section-beginning container text-center"
+    >
+      <div class="row card-container">
         <div class="col d-flex align-items-center">Project 1</div>
         <div class="col">
           <div>Liminal Game Jam</div>
           <img class="image1" src="images/LiminalGameJam.jpg" />
         </div>
         <div class="col">
-          Description
+          <a
+            class="dropdown-item text-decoration-underline"
+            target="_"
+            href="https://ranarh.itch.io/the-lemon-orchard"
+            >Itch.io Link</a
+          >
           <div class="d-flex w-100 align-items-center">
-            Collaborative project inspired by games like Hades made in Godot
-            Game Engine during Spring 2025.
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="project-section-beginning container text-center">
-      <div class="row">
-        <div class="col d-flex align-items-center">Project 2</div>
-        <div class="col">
-          <div>Tiny Rougelite</div>
-          <img class="image1" src="images/godotGame.png" />
-        </div>
-        <div class="col">
-          Description
-          <div>
             Developed in Godot with two artists and one sound designer released
             on itch.io for Liminal Game Jam 2025
           </div>
         </div>
       </div>
     </div>
-    <div class="project-section-beginning container text-center">
-      <div class="row">
+    <div
+      class="sliding2 shadow-lg p-2 project-section-beginning container text-center"
+    >
+      <div class="row card-container">
+        <div class="col d-flex align-items-center">Project 2</div>
+        <div class="col">
+          <div>Tiny Rougelite</div>
+          <img class="image1" src="images/godotGame.png" />
+        </div>
+        <div class="col">
+          <a
+            class="dropdown-item text-decoration-underline"
+            target="_"
+            href="https://github.com/boothe0/Tiny-Rougelite"
+            >Github Link</a
+          >
+          <div>
+            Collaborative project inspired by games like Hades made in Godot
+            Game Engine during Spring 2025.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sliding3 shadow-lg p-2 project-section-beginning container text-center"
+    >
+      <div class="row card-container">
         <div class="col d-flex align-items-center">Project 3</div>
         <div class="col">
           <div>KanbanBoard</div>
           <img class="image1" src="images/KanbanProject.png" />
         </div>
         <div class="col">
-          Description
+          <a
+            class="dropdown-item text-decoration-underline"
+            target="_"
+            href="https://github.com/boothe0/KanbanBoard"
+            >Github Link</a
+          >
           <div>
             In-progress solo project utilizing the Django Framework, JavaScript,
             HTML and Bootstrap CSS
@@ -104,25 +151,42 @@
         </div>
       </div>
     </div>
-    <div class="text-center">Tools</div>
-    <div class="d-flex justify-content-center tools-section">
-      <div>
-        <img class="tools-images" src="images/toolsPictures/bootstrap.png" />
+    <div class="tools-section">
+      <div class="header text-center">Tools</div>
+      <div class="d-flex width:100%; justify-content-center tools-section">
+        <div class="image">
+          <i class="devicon-python-plain-wordmark colored"></i>
+        </div>
+        <div class="image">
+          <i class="devicon-django-plain colored"></i>
+        </div>
+        <div class="image">
+          <i class="devicon-azuresqldatabase-plain colored"></i>
+        </div>
+        <div class="image">
+          <i class="devicon-react-original-wordmark colored"></i>
+        </div>
+        <div class="image">
+          <i class="devicon-godot-plain-wordmark colored"></i>
+        </div>
+        <div class="image">
+          <i class="devicon-bootstrap-plain-wordmark colored"></i>
+        </div>
+        <div class="image">
+          <i class="devicon-jira-plain-wordmark colored"></i>
+        </div>
+        <div class="image">
+          <i class="devicon-linux-plain colored"></i>
+        </div>
       </div>
-      <div>
-        <img class="tools-images" src="images/toolsPictures/c.png" />
-      </div>
-      <div>
-        <img class="tools-images" src="images/toolsPictures/python.png" />
-      </div>
-      <div></div>
     </div>
-    <div class="text-center">Contact Me</div>
+
+    <div class="header text-center">Contact Me</div>
     <div class="d-flex justify-content-center">
       <div class="p-5">
         <img class="tools-images w-10 h-10" src="images/gmail.png" />
         <a
-          class="gmail-link underline"
+          class="gmail-link link-secondary underline"
           href="mailto:elizabethbooth05@gmail.com"
           target="_blank"
         >
@@ -132,7 +196,7 @@
       <div class="p-5">
         <img class="tools-images w-10 h-10" src="images/linkedin.png" />
         <a
-          class="linkedin-link underline"
+          class="linkedin-link link-secondary underline"
           href="https://www.linkedin.com/in/elizabeth-booth/"
           target="_blank"
         >
@@ -140,7 +204,10 @@
         </a>
       </div>
     </div>
-
+    <div class="nature-container d-flex justify-content-center">
+      <img class="nature" src="images/mountains.jpg" />
+      <img class="nature" src="images/sedona.jpg" />
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
