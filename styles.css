@@ -1,7 +1,11 @@
 body {
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   font-family: "PT Serif";
   position: relative;
+}
+html,
+body {
+  overflow-x: hidden;
 }
 .project-section-beginning {
   margin-bottom: 100px;
@@ -41,15 +45,13 @@ body {
   opacity: 0;
   animation: fadein 1s forwards;
 }
-.sliding1 {
+.sliding1,
+.sliding2,
+.sliding3,
+.sliding4 {
   animation: slide-in 1000ms;
 }
-.sliding2 {
-  animation: slide-in 1250ms;
-}
-.sliding3 {
-  animation: slide-in 1500ms;
-}
+
 .image {
   font-size: 60px;
   padding: 5px;
@@ -64,7 +66,7 @@ body {
   max-width: 30%;
   margin: 0 auto;
 }
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   * {
     overflow-x: hidden;
   }
@@ -101,7 +103,11 @@ body {
     display: block;
   }
 }
-
+@media (min-width: 431px) {
+  .nature {
+    max-width: 800px;
+  }
+}
 @keyframes fadein {
   to {
     opacity: 1;
