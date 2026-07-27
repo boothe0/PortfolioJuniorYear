@@ -1,4 +1,4 @@
-# Portfolio for Junior Year
+# Portfolio for Senior Year
 
 ### Tech Stack
 - Bootstrap CSS
